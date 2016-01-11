@@ -7,10 +7,10 @@ package md.mgmt.base.md;
 public class MdAttr {
 
     private String name;
-    private byte acl;
-    private int size;
-    private long createTime;
-    private long updateTime;
+    private Short acl;
+    private Integer size;
+    private Long createTime;
+    private Long updateTime;
     private Object otherAttrs;
 
     public String getName() {
@@ -21,35 +21,35 @@ public class MdAttr {
         this.name = name;
     }
 
-    public byte getAcl() {
+    public Short getAcl() {
         return acl;
     }
 
-    public void setAcl(byte acl) {
+    public void setAcl(Short acl) {
         this.acl = acl;
     }
 
-    public int getSize() {
+    public Integer getSize() {
         return size;
     }
 
-    public void setSize(int size) {
+    public void setSize(Integer size) {
         this.size = size;
     }
 
-    public long getCreateTime() {
+    public Long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(long createTime) {
+    public void setCreateTime(Long createTime) {
         this.createTime = createTime;
     }
 
-    public long getUpdateTime() {
+    public Long getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(long updateTime) {
+    public void setUpdateTime(Long updateTime) {
         this.updateTime = updateTime;
     }
 
