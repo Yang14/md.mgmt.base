@@ -10,6 +10,14 @@ public class MdIndex {
 
     private String name;
 
+    public MdIndex() {
+    }
+
+    public MdIndex(String path, String name) {
+        this.path = path;
+        this.name = name;
+    }
+
     public String getPath() {
         return path;
     }

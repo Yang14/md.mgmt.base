@@ -7,7 +7,16 @@ public class ClusterNodeInfo {
 
     private String ip;
     private Integer port;
-    private String distrCode;
+    private Integer distrCode;
+
+    public ClusterNodeInfo() {
+    }
+
+    public ClusterNodeInfo(String ip, Integer port, Integer distrCode) {
+        this.ip = ip;
+        this.port = port;
+        this.distrCode = distrCode;
+    }
 
     public String getIp() {
         return ip;
@@ -25,11 +34,11 @@ public class ClusterNodeInfo {
         this.port = port;
     }
 
-    public String getDistrCode() {
+    public Integer getDistrCode() {
         return distrCode;
     }
 
-    public void setDistrCode(String distrCode) {
+    public void setDistrCode(Integer distrCode) {
         this.distrCode = distrCode;
     }
 

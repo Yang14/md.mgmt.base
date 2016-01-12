@@ -18,6 +18,15 @@ public class RenamedMd {
      */
     private String newName;
 
+    public RenamedMd() {
+    }
+
+    public RenamedMd(String path, String name, String newName) {
+        this.path = path;
+        this.name = name;
+        this.newName = newName;
+    }
+
     public String getPath() {
         return path;
     }

@@ -8,17 +8,25 @@ public class ExactCode {
     /**
      * 分布编码
      */
-    private String distrCode;
+    private Integer distrCode;
     /**
      * 文件编码
      */
     private String fileCode;
 
-    public String getDistrCode() {
+    public ExactCode() {
+    }
+
+    public ExactCode(Integer distrCode, String fileCode) {
+        this.distrCode = distrCode;
+        this.fileCode = fileCode;
+    }
+
+    public Integer getDistrCode() {
         return distrCode;
     }
 
-    public void setDistrCode(String distrCode) {
+    public void setDistrCode(Integer distrCode) {
         this.distrCode = distrCode;
     }
 
