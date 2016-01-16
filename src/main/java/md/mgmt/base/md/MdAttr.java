@@ -7,11 +7,33 @@ package md.mgmt.base.md;
 public class MdAttr {
 
     private String name;
+    private Boolean type;
     private Short acl;
     private Integer size;
     private Long createTime;
     private Long updateTime;
     private Object otherAttrs;
+
+    public MdAttr() {
+    }
+
+    public MdAttr(String name, Boolean type, Short acl, Integer size, Long createTime, Long updateTime, Object otherAttrs) {
+        this.name = name;
+        this.type = type;
+        this.acl = acl;
+        this.size = size;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+        this.otherAttrs = otherAttrs;
+    }
+
+    public Boolean getType() {
+        return type;
+    }
+
+    public void setType(Boolean type) {
+        this.type = type;
+    }
 
     public String getName() {
         return name;
@@ -65,6 +87,7 @@ public class MdAttr {
     public String toString() {
         return "MdAttr{" +
                 "name='" + name + '\'' +
+                ", type=" + type +
                 ", acl=" + acl +
                 ", size=" + size +
                 ", createTime=" + createTime +
