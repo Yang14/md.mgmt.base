@@ -8,7 +8,7 @@ public class ExactCode {
     /**
      * 分布编码
      */
-    private Integer distrCode;
+    private Long distrCode;
     /**
      * 文件编码
      */
@@ -17,16 +17,16 @@ public class ExactCode {
     public ExactCode() {
     }
 
-    public ExactCode(Integer distrCode, String fileCode) {
+    public ExactCode(Long distrCode, String fileCode) {
         this.distrCode = distrCode;
         this.fileCode = fileCode;
     }
 
-    public Integer getDistrCode() {
+    public Long getDistrCode() {
         return distrCode;
     }
 
-    public void setDistrCode(Integer distrCode) {
+    public void setDistrCode(Long distrCode) {
         this.distrCode = distrCode;
     }
 

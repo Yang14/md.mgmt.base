@@ -7,12 +7,12 @@ public class ClusterNodeInfo {
 
     private String ip;
     private Integer port;
-    private Integer distrCode;
+    private Long distrCode;
 
     public ClusterNodeInfo() {
     }
 
-    public ClusterNodeInfo(String ip, Integer port, Integer distrCode) {
+    public ClusterNodeInfo(String ip, Integer port, Long distrCode) {
         this.ip = ip;
         this.port = port;
         this.distrCode = distrCode;
@@ -34,11 +34,11 @@ public class ClusterNodeInfo {
         this.port = port;
     }
 
-    public Integer getDistrCode() {
+    public Long getDistrCode() {
         return distrCode;
     }
 
-    public void setDistrCode(Integer distrCode) {
+    public void setDistrCode(Long distrCode) {
         this.distrCode = distrCode;
     }
 

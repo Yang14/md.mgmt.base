@@ -16,7 +16,16 @@ public class RespDto {
     /**
      * 操作返回的对象
      */
-    private Object obj;
+    private String objStr;
+
+    public RespDto() {
+    }
+
+    public RespDto(Boolean success, String msg, String objStr) {
+        this.success = success;
+        this.msg = msg;
+        this.objStr = objStr;
+    }
 
     public Boolean getSuccess() {
         return success;
@@ -34,12 +43,12 @@ public class RespDto {
         this.msg = msg;
     }
 
-    public Object getObj() {
-        return obj;
+    public String getObjStr() {
+        return objStr;
     }
 
-    public void setObj(Object obj) {
-        this.obj = obj;
+    public void setObjStr(String objStr) {
+        this.objStr = objStr;
     }
 
     @Override
@@ -47,7 +56,7 @@ public class RespDto {
         return "RespDto{" +
                 "success=" + success +
                 ", msg='" + msg + '\'' +
-                ", obj=" + obj +
+                ", objStr='" + objStr + '\'' +
                 '}';
     }
 }
